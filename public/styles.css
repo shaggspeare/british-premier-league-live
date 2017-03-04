@@ -1,0 +1,106 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.hidden {
+    display: none !important;
+}
+/*Bar-chart styles*/
+
+.bar-char-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    margin: 5px 0 0 10px;
+    border-radius: 6px;
+    border: none;
+    background: orangered;
+    color: white;
+    padding: 15px 40px;
+}
+.bar {
+    transition: fill 0.3s ease;
+}
+.bar:hover{
+    fill: yellow;
+    stroke-width: 2;
+    stroke: orangered;
+}
+.competition-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.axis {
+    font-size: 12px;
+}
+
+.axis line {
+    fill: none;
+    stroke: lightgrey;
+    stroke-width: 3;
+    shape-rendering: crispEdges;
+}
+.axis line:hover {
+    stroke: red;
+}
+.axis line:hover + text{
+    fill: red;
+}
+.axis path {
+    fill: none;
+    stroke: black;
+}
+.x.axis path{
+    stroke: black;
+}
+.legend {
+    fill: white;
+    stroke: black;
+}
+
+/*Hierarchy chart styles*/
+.hierarchy-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toggle-chart{
+    position: fixed;
+    right: 0;
+    top: 30px;
+    padding: 15px;
+    font-size: 20px;
+    background: deepskyblue;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.arc-text {
+    font-size: 10px;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    height: 100px;
+    padding: 2px;
+    font-size: 14px;
+    background: orangered;
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.tooltip-image {
+    margin: 2px;
+    width: 45px;
+    height: 50px;
+}
