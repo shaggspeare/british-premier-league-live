@@ -1,4 +1,5 @@
 #  Premier League statistics app
+This set of charts show live statistics for premier league clubs on their position in tournament and squad's market value
 
 Data from http://api.football-data.org/
 
